@@ -1,0 +1,19 @@
+SHELL=/bin/bash
+BASH_ENV=~/.bashrc_conda
+MAILTO="reda.elhour@tutanota.com"
+##
+##001_PORTFOLIO
+##
+##SCRPAPING
+#47 12 * * * . /root/100_Scraping/20_Scraping_commands.sh > /var/log/20_cronrun 2>&1
+##TEST PORTFOLIOS
+#30 19 * * * . /root/001_Portfolio_Scripts/000_TEST_SINGLE_CPU/02_commands.sh > /var/log/03_cronrun 2>&1
+##UPDATE DATA
+#40 8 * * * . /root/001_Portfolio_Scripts/000_TEST_SINGLE_CPU/01_commands.sh > /var/log/04_cronrun 2>&1
+##
+##INSTA Script
+#0 18 * * * . /root/200_Website/003_SOCIAL/01_commands.sh > /var/log/00_insta_cronrun 2>&1
+##INSTA AUTO POST
+#0 17 * * * . /root/200_Website/003_SOCIAL/10_autopost_commands.sh > /var/log/10_insta_cronrun 2>&1
+##VISIT WEBSITE
+45 16 * * * . /root/200_Website/003_SOCIAL/02_commands.sh > /var/log/20_website_visit 2>&1
